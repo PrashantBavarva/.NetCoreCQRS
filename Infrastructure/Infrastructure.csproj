@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Hangfire" Version="1.8.5" />
+      <PackageReference Include="Hangfire.MAMQSqlExtension" Version="1.0.6" />
+      <PackageReference Include="MassTransit.RabbitMQ" Version="8.1.1" />
+      <PackageReference Include="Polly" Version="8.0.0" />
+      <PackageReference Include="RazorEngineCore" Version="2022.8.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Application\Application.csproj" />
+      <ProjectReference Include="..\Common\Common.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Providers\" />
+      <Folder Include="Services\" />
+    </ItemGroup>
+
+</Project>

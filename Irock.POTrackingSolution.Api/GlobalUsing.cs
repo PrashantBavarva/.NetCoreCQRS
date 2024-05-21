@@ -1,0 +1,10 @@
+global using Domain;
+global using Application;
+global using Persistence;
+global using Persistence.DependencyInjection;
+global using Common;
+global using Common.Extensions;
+global using Microsoft.AspNetCore.Builder;
+global using Infrastructure;
+global using ValidationEngine;
+global using ValidationEngine.DependencyInjection;
